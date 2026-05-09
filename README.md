@@ -113,3 +113,10 @@ Write a Python script that:
   these without crashing.
 - Some genes are represented by more than one transcript accession; your report should still
   produce one row per gene.
+
+## Requirements (added)
+
+- python3 -m venv coverage
+- source coverage/bin/activate
+- pip install numpy
+- pip install pandas
