@@ -80,7 +80,7 @@ def read_sambamba(input_file: str) -> pd.DataFrame:
     try:
         dataframe = pd.read_csv(input_file, sep=r'\s+', header=0)
     except FileNotFoundError as exc:
-        raise SystemError(f"File not found -> {input_file}.") from exc
+        raise FileNotFoundError(f"File not found -> {input_file}.") from exc
     
     
     # remove all special characters using regex
