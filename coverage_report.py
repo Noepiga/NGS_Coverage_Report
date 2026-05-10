@@ -155,7 +155,7 @@ def create_report(input_df: pd.DataFrame, gene_list: str, threshold_value: float
             # number of exons per gene
             num_exons = len(gene_data)
     
-            # number of failing exons (coverage < 30x)
+            # number of failing exons (coverage30x < threshold)
             num_failing = len(gene_data[gene_data['percentage30'] < float(threshold_value)])
     
             # min coverage
