@@ -201,7 +201,7 @@ def save_output(input_df: pd.DataFrame, sambamba_filename:str, threshold_value: 
     mask_failed_gene = (input_df['Status'] == "FAIL")
     num_failed_gene = len(input_df[mask_failed_gene])
     tot_gene = len(input_df)
-    print(f"Sample {sample_id}: {num_failed_gene}/{tot_gene} genes below {threshold_value}x threshold")
+    print(f"Sample {sample_id}: {num_failed_gene}/{tot_gene} genes below 30x threshold")
 
     input_df.to_csv(output_filename, index=False, sep="\t")
 
